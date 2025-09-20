@@ -4,6 +4,12 @@
   padding: 0 15px;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 header, footer {
   background-color: #333;
   color: #fff;
