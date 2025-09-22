@@ -249,17 +249,24 @@ footer {
 }
 
 @media (max-width: 767px) {
-  #main-nav {
-    display: none;
+    #main-nav {
+    display: none !important;
+  }
+
+  body {
+    font-size: 18px;
+    line-height: 1.6;
   }
 
   .styled-table {
     width: 100%;
     font-size: 14px;
+    border-collapse: collapse;
   }
 
   .styled-table th,
   .styled-table td {
-    padding: 6px;
+    padding: 4px 6px;
+    white-space: nowrap;
   }
 }
