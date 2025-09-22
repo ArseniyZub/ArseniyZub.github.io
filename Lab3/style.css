@@ -254,14 +254,12 @@ footer {
   }
 
   .styled-table {
-    display: block;
     width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    font-size: 14px;
   }
 
-  .styled-table table {
-    width: 100%;
-    min-width: 600px;
+  .styled-table th,
+  .styled-table td {
+    padding: 6px;
   }
 }
