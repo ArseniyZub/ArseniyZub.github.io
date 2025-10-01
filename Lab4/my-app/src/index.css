@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item-selected {
+  background: rgba(255, 166, 0, 0.852) !important;
+  transition: background 0.3s ease;
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover {
+  background: rgba(255, 165, 0, 0.852) !important;
+}
+
+.ant-menu-dark .ant-menu-item a {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.ant-menu-dark .ant-menu-item a:hover {
+  color: #facc70 !important;
+}
