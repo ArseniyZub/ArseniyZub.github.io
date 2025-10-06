@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web-программирование</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <div class="header-row">
+        <div class="logo-name">
+          <img src="webPicture.png" alt="Логотип сайта" class="logo-img">
+          <span class="site-name">Сайт для изучения Web-программирования</span>
+        </div>
+        <nav id="main-nav">
+          <a href="#1">Ссылка 1</a>
+          <a href="#2">Ссылка 2</a>
+          <a href="#3">Ссылка 3</a>
+        </nav>
+      </div>
+  </header>
+
+  <main id="container" class="main-flex">
+    <section class="order-1">
+      <h2 id="top">Список ссылок</h2>
+      <ul>
+        <li><a href="http://kubsu.ru/">http://kubsu.ru/</a></li>
+        <li><a href="https://kubsu.ru/">https://kubsu.ru/</a></li>
+        <li><img src="image.jpg" alt="Цветок" class="download-img" /></li>
+        <li><a href="Lab1/General/InGeneral/index.html">/index.html</a></li>
+        <li><a href="/">/</a></li>
+        <li><a href="#form">#form</a></li>
+        <li><a href="https://thecode.media/metrica/?utm_source=habr&utm_medium=cpc&utm_campaign=test2025">thecode.media</a></li>
+        <li><a href="https://www.amazon.com/stores/page/ADB3739F-CC98-4809-9E1F-C36731141002?ingress=3&id=123">Amazon Store</a></li>
+        <li><a href="page2.html">page2.html</a></li>
+        <li><a href="about/page3.html">about/page3.html</a></li>
+        <li><a href="../globIndex1.html">../globIndex1.html</a></li>
+        <li><a href="../../globIndex.html">../../globIndex.html</a></li>
+        <li><a href="https://developer.mozilla.org/ru/" target="_blank">Документация MDN</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/HTML#История" target="_blank">История HTML</a></li>
+        <li><a href="">Пустой href</a></li>
+        <li><a>Без href</a></li>
+        <li><a href="https://example.com/hidden" rel="nofollow">nofollow ссылка</a></li>
+        <li><a href="https://example.com/noindex" rel="noindex">noindex ссылка</a></li>
+        <li>
+          Нумерованный список ссылок:
+          <ol>
+            <li><a href="https://html.spec.whatwg.org/">HTML Spec</a></li>
+            <li><a href="https://www.w3.org/TR/selectors-4/">CSS Selectors Level 4</a></li>
+            <li><a href="https://httpwg.org/specs/">HTTP Specs</a></li>
+          </ol>
+        </li>
+        <li><a href="ftp://demo:demo@speedtest.tele2.net/1MB.zip">FTP 1MB.zip</a></li>
+      </ul>
+    </section>
+
+    <div class="content order-2">
+      <h2>Пример таблицы</h2>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th rowspan="2">№</th>
+            <th colspan="2">ФИ</th>
+            <th rowspan="2">Группа</th>
+            <th rowspan="2">Оценка</th>
+          </tr>
+          <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Иван</td><td>Иванов</td><td>А-101</td><td>5</td></tr>
+          <tr><td>2</td><td>Петр</td><td>Петров</td><td>А-102</td><td>4</td></tr>
+          <tr><td>3</td><td>Сергей</td><td>Сидоров</td><td>А-103</td><td>5</td></tr>
+          <tr><td>4</td><td>Анна</td><td>Кузнецова</td><td>А-101</td><td>3</td></tr>
+          <tr><td>5</td><td>Мария</td><td>Соколова</td><td>А-102</td><td>4</td></tr>
+          <tr><td>6</td><td>Дмитрий</td><td>Орлов</td><td>А-103</td><td>5</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <section id="form" class="order-3">
+      <h2>Форма</h2>
+      <label>
+        ФИО<br />
+        <input name="name" type="text" value="Иванов Иван Иванович" />
+      </label>
+
+      <label>
+        Номер телефона:<br />
+        <input name="phone" type="tel" placeholder="+7 999 123-45-67" />
+      </label>
+
+      <label>
+        Email:<br />
+        <input name="email" type="email" placeholder="email@gmail.com" />
+      </label>
+
+      <label>
+        Дата рождения:<br />
+        <input name="birthdate" type="date" />
+      </label>
+
+      <div class="form-group">
+        <span>Пол:</span><br />
+        <label><input type="radio" name="gender" value="male" /> Мужской</label>
+        <label><input type="radio" name="gender" value="female" /> Женский</label>
+        <label><input type="radio" name="gender" value="other" /> Другое</label>
+      </div>
+
+      <label>
+        Любимый язык программирования:<br />
+        <select name="languages[]" multiple size="10">
+          <option value="Pascal">Pascal</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Haskel">Haskel</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Prolog">Prolog</option>
+          <option value="Scala">Scala</option>
+        </select>
+      </label>
+
+      <label>
+        Биография:<br />
+        <textarea name="bio" placeholder="Биография"></textarea>
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" name="agree" required />
+        С контрактом ознакомлен(а)
+      </label>
+
+      <input type="submit" value="Сохранить" class="btn-submit" />
+    </section>
+
+  </main>
+
+  <div class="box">
+      <img src="webPicture.png" alt="Логотип Web">
+      <span>Web-Programming</span>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Учебный сайт. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>

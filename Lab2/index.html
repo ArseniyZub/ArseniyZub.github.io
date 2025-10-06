@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Учебный сайт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <div class="header-row">
+        <div class="logo-name">
+          <img src="webPicture.png" alt="Логотип сайта" class="logo-img">
+          <span class="site-name">Сайт для изучения Web-программирования</span>
+        </div>
+        <nav id="main-nav">
+          <a href="#">Ссылка 1</a>
+          <a href="#">Ссылка 2</a>
+          <a href="#">Ссылка 3</a>
+        </nav>
+      </div>
+  </header>
+
+  <main id="container">
+    <div class="content">
+      <h2>Пример ссылок, таблицы, формы</h2>
+    </div>
+
+    <section>
+    <h2 id="top">Список ссылок</h2>
+      <ul>
+          <li> <!-- 1 -->
+              <a href="http://kubsu.ru/">http://kubsu.ru/</a>
+          </li>
+
+          <li> <!-- 2 -->
+              <a href="https://kubsu.ru/">https://kubsu.ru/</a>
+          </li>
+
+          <!-- 3 -->
+          <li>
+              <img src="image.jpg" alt="Цветок" class="download-img" />
+          </li>
+
+          <li> <!-- 4 -->
+              <a href="Lab1/General/InGeneral/index.html">/index.html</a>
+          </li>
+
+          <li> <!-- 5 -->
+              <a href="/">/</a>
+          </li>
+
+          <li> <!-- 6 -->
+              <a href="#form">#form</a>
+          </li>
+
+          <li> <!-- 7 -->
+              <a href="https://thecode.media/metrica/?utm_source=habr&utm_medium=cpc&utm_campaign=test2025">
+                  https://thecode.media/metrica/?utm_source=habr&utm_medium=cpc&utm_campaign=test2025</a>
+          </li>
+
+          <li> <!-- 8 -->
+              <a href="https://www.amazon.com/stores/page/ADB3739F-CC98-4809-9E1F-C36731141002?ingress=3&id=123">
+                  https://www.amazon.com/stores/page/ADB3739F-CC98-4809-9E1F-C36731141002?ingress=3&id=123</a>
+          </li>
+
+          <li> <!-- 9 -->
+              <a href="page2.html">page2.html</a>
+          </li>
+
+          <li> <!-- 10 -->
+              <a href="about/page3.html">about/page3.html</a>
+          </li>
+
+          <li> <!-- 11 -->
+              <a href="../globIndex1.html">../globIndex1.html</a>
+          </li>
+
+          <li> <!-- 12 -->
+              <a href="../../globIndex.html">../../globIndex.html</a>
+          </li>
+
+          <li> <!-- 13 -->
+              <p>Этот абзац содержит <a href="https://developer.mozilla.org/ru/" target="_blank">полезную документацию</a>
+                  по веб-разработке на MDN.</p>
+          </li>
+
+          <li> <!-- 14 -->
+              <a href="https://ru.wikipedia.org/wiki/HTML#История" target="_blank">
+                  https://ru.wikipedia.org/wiki/HTML#История</a>
+          </li>
+
+          <li> <!-- 15 --> <br>
+            <!-- картинка с квадратной областью, картинка с круглой областью -->
+            <img src="https://dummyimage.com/420x220/0f172a/ffffff.png&text=Image+1"
+                alt="Картинка 2 с областями" usemap="#map" width="420" height="220">
+
+            <map name="map">
+              <area shape="rect" coords="0,0,120,50" href="https://kubsu.ru/"
+                  alt="Прямоугольник → kubsu.ru" target="_blank" />
+              <area shape="circle" coords="110,110,60" href="https://developer.mozilla.org/ru/"
+                  alt="Круг → MDN" target="_blank"/>
+            </map><br><br>
+          </li>
+
+          <li> <!-- 16 -->
+            <a href="">Пустой href</a>
+          </li>
+
+          <li> <!-- 17 -->
+            <a>Без href</a>
+          </li>
+
+          <li> <!-- 18 -->
+            <a href="https://example.com/hidden" rel="nofollow">nofollow ссылка</a>
+          </li>
+
+          <li> <!-- 19 -->
+            <a href="https://example.com/noindex" rel="noindex">noindex ссылка</a>
+          </li>
+
+          <li> <!-- 20 -->Нумерованный список ссылок:
+            <ol>
+              <li><a href="https://html.spec.whatwg.org/" title="Спецификация HTML Living Standard">HTML Spec</a></li>
+              <li><a href="https://www.w3.org/TR/selectors-4/" title="CSS селекторы уровня 4">CSS Selectors Level 4</a></li>
+              <li><a href="https://httpwg.org/specs/" title="Спецификации HTTP">HTTP Specs</a></li>
+            </ol>
+          </li>
+
+          <li> <!-- 21 -->
+            <a href="ftp://demo:demo@speedtest.tele2.net/1MB.zip">ftp://demo:demo@speedtest.tele2.net/1MB.zip</a>
+          </li>
+      </ul>
+    </section>
+
+    <div class="content">
+      <h2>Пример таблицы</h2>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th rowspan="2">№</th>
+            <th colspan="2">ФИО</th>
+            <th rowspan="2">Группа</th>
+            <th rowspan="2">Оценка</th>
+          </tr>
+          <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Иван</td><td>Иванов</td><td>А-101</td><td>5</td></tr>
+          <tr><td>2</td><td>Петр</td><td>Петров</td><td>А-102</td><td>4</td></tr>
+          <tr><td>3</td><td>Сергей</td><td>Сидоров</td><td>А-103</td><td>5</td></tr>
+          <tr><td>4</td><td>Анна</td><td>Кузнецова</td><td>А-101</td><td>3</td></tr>
+          <tr><td>5</td><td>Мария</td><td>Соколова</td><td>А-102</td><td>4</td></tr>
+          <tr><td>6</td><td>Дмитрий</td><td>Орлов</td><td>А-103</td><td>5</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <section id="form">
+      <h2>Форма</h2>
+
+      <label>
+        ФИО<br />
+        <input name="name" type="text" value="Иванов Иван Иванович" />
+      </label>
+
+      <label>
+        Номер телефона:<br />
+        <input name="phone" type="tel" placeholder="+7 999 123-45-67" />
+      </label>
+
+      <label>
+        Email:<br />
+        <input name="email" type="email" placeholder="email@gmail.com" />
+      </label>
+
+      <label>
+        Дата рождения:<br />
+        <input name="birthdate" type="date" />
+      </label>
+
+      <div class="form-group">
+        <span>Пол:</span><br />
+        <label><input type="radio" name="gender" value="male" /> Мужской</label>
+        <label><input type="radio" name="gender" value="female" /> Женский</label>
+        <label><input type="radio" name="gender" value="other" /> Другое</label>
+      </div>
+
+      <label>
+        Любимый язык программирования:<br />
+        <select name="languages[]" multiple size="10">
+          <option value="Pascal">Pascal</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Haskel">Haskel</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Prolog">Prolog</option>
+          <option value="Scala">Scala</option>
+        </select>
+      </label>
+
+      <label>
+        Биография:<br />
+        <textarea name="bio" placeholder="Биография"></textarea>
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" name="agree" required />
+        С контрактом ознакомлен(а)
+      </label>
+
+      <input type="submit" value="Сохранить" class="btn-submit" />
+    </section>
+
+    <div class="box">
+      <img src="webPicture.png" alt="Логотип Web">
+      <span>Web-Programming</span>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Учебный сайт. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>
