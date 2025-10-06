@@ -73,6 +73,8 @@ export default function App() {
               theme="dark"
               mode="horizontal"
               style={{
+                lineHeight: "64px",
+                background: "#444",
                 flex: 1,
                 minWidth: 0,
                 display: "flex",
@@ -80,8 +82,6 @@ export default function App() {
                 overflow: "hidden",
                 flexWrap: "nowrap",
                 gap: "8px",
-                border: "none",
-                background: "transparent"
               }}
               items={[
                 {
@@ -90,12 +90,12 @@ export default function App() {
                     <span
                       style={{
                         color: "#fff",
-                        padding: "6px 10px",
-                        borderRadius: "20px",
+                        padding: "6px 14px",
+                        borderRadius: "6px",
                         transition: "background 0.3s ease",
                         whiteSpace: "nowrap",
                       }}
-                      onMouseEnter={e => (e.target.style.background = "rgba(255,255,255,0.15)")}
+                      onMouseEnter={e => (e.target.style.background = "#555")}
                       onMouseLeave={e => (e.target.style.background = "transparent")}
                     >
                       Ссылка 1
@@ -108,12 +108,12 @@ export default function App() {
                     <span
                       style={{
                         color: "#fff",
-                        padding: "6px 10px",
-                        borderRadius: "20px",
+                        padding: "6px 14px",
+                        borderRadius: "6px",
                         transition: "background 0.3s ease",
                         whiteSpace: "nowrap",
                       }}
-                      onMouseEnter={e => (e.target.style.background = "rgba(255,255,255,0.15)")}
+                      onMouseEnter={e => (e.target.style.background = "#555")}
                       onMouseLeave={e => (e.target.style.background = "transparent")}
                     >
                       Ссылка 2
@@ -126,12 +126,12 @@ export default function App() {
                     <span
                       style={{
                         color: "#fff",
-                        padding: "6px 10px",
-                        borderRadius: "20px",
+                        padding: "6px 14px",
+                        borderRadius: "6px",
                         transition: "background 0.3s ease",
                         whiteSpace: "nowrap",
                       }}
-                      onMouseEnter={e => (e.target.style.background = "rgba(255,255,255,0.15)")}
+                      onMouseEnter={e => (e.target.style.background = "#555")}
                       onMouseLeave={e => (e.target.style.background = "transparent")}
                     >
                       Ссылка 3
@@ -176,36 +176,38 @@ export default function App() {
           {/* Ссылки */}
           <Col xs={24} md={6} lg={6}>
             <Title level={3} style={{ marginBottom: 12 }}>Список ссылок</Title>
-            <ul>
-              <li><a href="http://kubsu.ru/">http://kubsu.ru/</a></li>
-              <li><a href="https://kubsu.ru/">https://kubsu.ru/</a></li>
-              <li><img src="/image.jpg" alt="Цветок"
-                  style={{ maxWidth: "100%", height: "auto", display: "block", margin: "10px auto", borderRadius: "6px" }}/></li>
-              <li><a href="Lab1/General/InGeneral/index.html">/index.html</a></li>
-              <li><a href="/">/</a></li>
-              <li><a href="#form">#form</a></li>
-              <li><a href="https://thecode.media/metrica/?utm_source=habr&utm_medium=cpc&utm_campaign=test2025">thecode.media</a></li>
-              <li><a href="https://www.amazon.com/stores/page/ADB3739F-CC98-4809-9E1F-C36731141002?ingress=3&id=123">Amazon Store</a></li>
-              <li><a href="page2.html">page2.html</a></li>
-              <li><a href="about/page3.html">about/page3.html</a></li>
-              <li><a href="../globIndex1.html">../globIndex1.html</a></li>
-              <li><a href="../../globIndex.html">../../globIndex.html</a></li>
-              <li><a href="https://developer.mozilla.org/ru/" target="_blank">Документация MDN</a></li>
-              <li><a href="https://ru.wikipedia.org/wiki/HTML#История" target="_blank">История HTML</a></li>
-              <li><a href="">Пустой href</a></li>
-              <li><a>Без href</a></li>
-              <li><a href="https://example.com/hidden" rel="nofollow">nofollow ссылка</a></li>
-              <li><a href="https://example.com/noindex" rel="noindex">noindex ссылка</a></li>
-              <li>
-                Нумерованный список ссылок:
-                <ol>
-                  <li><a href="https://html.spec.whatwg.org/">HTML Spec</a></li>
-                  <li><a href="https://www.w3.org/TR/selectors-4/">CSS Selectors Level 4</a></li>
-                  <li><a href="https://httpwg.org/specs/">HTTP Specs</a></li>
-                </ol>
-              </li>
-              <li><a href="ftp://demo:demo@speedtest.tele2.net/1MB.zip">FTP 1MB.zip</a></li>
-            </ul>
+            <div style={{ wordWrap: "break-word", overflowWrap: "break-word" }}>
+              <ul>
+                <li><a href="http://kubsu.ru/">http://kubsu.ru/</a></li>
+                <li><a href="https://kubsu.ru/">https://kubsu.ru/</a></li>
+                <li><img src="/image.jpg" alt="Цветок"
+                    style={{ maxWidth: "100%", height: "auto", display: "block", margin: "10px auto", borderRadius: "6px" }}/></li>
+                <li><a href="Lab1/General/InGeneral/index.html">/index.html</a></li>
+                <li><a href="/">/</a></li>
+                <li><a href="#form">#form</a></li>
+                <li><a href="https://thecode.media/metrica/?utm_source=habr&utm_medium=cpc&utm_campaign=test2025">thecode.media</a></li>
+                <li><a href="https://www.amazon.com/stores/page/ADB3739F-CC98-4809-9E1F-C36731141002?ingress=3&id=123">Amazon Store</a></li>
+                <li><a href="page2.html">page2.html</a></li>
+                <li><a href="about/page3.html">about/page3.html</a></li>
+                <li><a href="../globIndex1.html">../globIndex1.html</a></li>
+                <li><a href="../../globIndex.html">../../globIndex.html</a></li>
+                <li><a href="https://developer.mozilla.org/ru/" target="_blank">Документация MDN</a></li>
+                <li><a href="https://ru.wikipedia.org/wiki/HTML#История" target="_blank">История HTML</a></li>
+                <li><a href="">Пустой href</a></li>
+                <li><a>Без href</a></li>
+                <li><a href="https://example.com/hidden" rel="nofollow">nofollow ссылка</a></li>
+                <li><a href="https://example.com/noindex" rel="noindex">noindex ссылка</a></li>
+                <li>
+                  Нумерованный список ссылок:
+                  <ol>
+                    <li><a href="https://html.spec.whatwg.org/">HTML Spec</a></li>
+                    <li><a href="https://www.w3.org/TR/selectors-4/">CSS Selectors Level 4</a></li>
+                    <li><a href="https://httpwg.org/specs/">HTTP Specs</a></li>
+                  </ol>
+                </li>
+                <li><a href="ftp://demo:demo@speedtest.tele2.net/1MB.zip">FTP 1MB.zip</a></li>
+              </ul>
+            </div>
           </Col>
 
           {/* Таблица */}
